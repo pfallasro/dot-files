@@ -1,0 +1,8 @@
+# aicommit2 configuration
+# API key is NOT stored here — set ANTHROPIC_API_KEY in your environment
+# See: https://github.com/tak-bro/aicommit2
+
+model=claude-sonnet-4-6
+type=conventional
+generate=3
+locale=en

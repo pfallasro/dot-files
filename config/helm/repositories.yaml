@@ -1,0 +1,30 @@
+apiVersion: ""
+generated: "0001-01-01T00:00:00Z"
+repositories:
+- caFile: ""
+  certFile: ""
+  insecure_skip_tls_verify: false
+  keyFile: ""
+  name: retool
+  pass_credentials_all: false
+  password: ""
+  url: https://charts.retool.com
+  username: ""
+- caFile: ""
+  certFile: ""
+  insecure_skip_tls_verify: false
+  keyFile: ""
+  name: chatwoot
+  pass_credentials_all: false
+  password: ""
+  url: https://chatwoot.github.io/charts
+  username: ""
+- caFile: ""
+  certFile: ""
+  insecure_skip_tls_verify: false
+  keyFile: ""
+  name: posthog
+  pass_credentials_all: false
+  password: ""
+  url: https://posthog.github.io/charts/
+  username: ""

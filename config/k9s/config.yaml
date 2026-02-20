@@ -1,0 +1,47 @@
+k9s:
+  liveViewAutoRefresh: true     # auto-refresh resource views
+  refreshRate: 2
+  apiServerTimeout: 30s         # increased for slow/remote clusters
+  maxConnRetry: 5
+  readOnly: false
+  noExitOnCtrlC: true           # prevent accidental exit during incidents
+  portForwardAddress: localhost
+  ui:
+    enableMouse: true
+    headless: false
+    logoless: false
+    crumbsless: false
+    splashless: false
+    reactive: true              # instant UI updates on resource changes
+    noIcons: false
+    defaultsToFullScreen: true  # maximize screen real estate
+    useFullGVRTitle: false
+    skin: night-owl
+  skipLatestRevCheck: false
+  disablePodCounting: false
+  shellPod:
+    image: nicolaka/netshoot    # full network debugging toolkit (curl, dig, tcpdump, etc.)
+    namespace: default
+    limits:
+      cpu: 100m
+      memory: 100Mi
+  imageScans:
+    enable: true
+    exclusions:
+      namespaces: []
+      labels: {}
+  logger:
+    tail: 500                   # more lines visible at once
+    buffer: 10000               # larger scrollback for log review
+    sinceSeconds: 300           # default: last 5 minutes
+    textWrap: false
+    disableAutoscroll: false
+    showTime: true              # always show timestamps (critical for incidents)
+  thresholds:
+    cpu:
+      critical: 80
+      warn: 60
+    memory:
+      critical: 85
+      warn: 70
+  defaultView: "pods"

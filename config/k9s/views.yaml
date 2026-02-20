@@ -1,0 +1,100 @@
+views:
+  # Pods — show resource usage, restarts, and node placement at a glance
+  v1/pods:
+    sortColumn: RESTARTS:desc
+    columns:
+      - NAME
+      - NAMESPACE
+      - READY
+      - STATUS
+      - RESTARTS
+      - CPU
+      - MEM
+      - NODE
+      - AGE
+
+  # Deployments — show rollout health immediately
+  apps/v1/deployments:
+    sortColumn: NAME:asc
+    columns:
+      - NAME
+      - NAMESPACE
+      - READY
+      - UP-TO-DATE
+      - AVAILABLE
+      - AGE
+
+  # Nodes — instance type and AZ visibility for capacity planning
+  v1/nodes:
+    sortColumn: NAME:asc
+    columns:
+      - NAME
+      - STATUS
+      - ROLES
+      - Instance-Type:.metadata.labels.node\.kubernetes\.io/instance-type
+      - AZ:.metadata.labels.topology\.kubernetes\.io/zone
+      - CPU
+      - MEM
+      - AGE
+
+  # Events — sorted by most recent for incident triage
+  v1/events:
+    sortColumn: LAST_SEEN:asc
+    columns:
+      - TYPE
+      - REASON
+      - NAMESPACE
+      - NAME
+      - MESSAGE
+      - LAST_SEEN
+      - COUNT
+
+  # Services — show external IPs for quick access during incidents
+  v1/services:
+    sortColumn: NAME:asc
+    columns:
+      - NAME
+      - NAMESPACE
+      - TYPE
+      - CLUSTER-IP
+      - EXTERNAL-IP
+      - PORT(S)
+      - AGE
+
+  # HPAs — track autoscaling behaviour during load events
+  autoscaling/v2/horizontalpodautoscalers:
+    sortColumn: NAME:asc
+    columns:
+      - NAME
+      - NAMESPACE
+      - REFERENCE
+      - TARGETS
+      - MINPODS
+      - MAXPODS
+      - REPLICAS
+      - AGE
+
+  # Ingresses — show hosts and load balancer addresses
+  networking.k8s.io/v1/ingresses:
+    sortColumn: NAME:asc
+    columns:
+      - NAME
+      - NAMESPACE
+      - CLASS
+      - HOSTS
+      - ADDRESS
+      - PORTS
+      - AGE
+
+  # PVCs — track storage health and capacity
+  v1/persistentvolumeclaims:
+    sortColumn: NAME:asc
+    columns:
+      - NAME
+      - NAMESPACE
+      - STATUS
+      - VOLUME
+      - CAPACITY
+      - ACCESS_MODES
+      - STORAGECLASS
+      - AGE

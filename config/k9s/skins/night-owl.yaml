@@ -1,0 +1,83 @@
+# Night Owl skin for k9s — matches the Night Owl VSCode theme
+k9s:
+  body:
+    fgColor: "#d6deeb"
+    bgColor: "#011627"
+    logoColor: "#82aaff"
+  prompt:
+    fgColor: "#d6deeb"
+    bgColor: "#011627"
+    suggestColor: "#addb67"
+  info:
+    fgColor: "#7fdbca"
+    sectionColor: "#82aaff"
+  dialog:
+    fgColor: "#d6deeb"
+    bgColor: "#01111d"
+    buttonFgColor: "#011627"
+    buttonBgColor: "#82aaff"
+    buttonFocusFgColor: "#011627"
+    buttonFocusBgColor: "#7fdbca"
+    labelFgColor: "#ecc48d"
+    fieldFgColor: "#d6deeb"
+  frame:
+    border:
+      fgColor: "#1d3b53"
+      focusColor: "#82aaff"
+    menu:
+      fgColor: "#d6deeb"
+      keyColor: "#7fdbca"
+      numKeyColor: "#c792ea"
+    crumbs:
+      fgColor: "#011627"
+      bgColor: "#82aaff"
+      activeColor: "#7fdbca"
+    status:
+      newColor: "#addb67"
+      modifyColor: "#ecc48d"
+      addColor: "#7fdbca"
+      errorColor: "#ff5874"
+      highlightColor: "#82aaff"
+      killColor: "#ff5874"
+      completedColor: "#637777"
+    title:
+      fgColor: "#d6deeb"
+      bgColor: "#011627"
+      highlightColor: "#7fdbca"
+      counterColor: "#ecc48d"
+      filterColor: "#c792ea"
+  views:
+    charts:
+      bgColor: "#011627"
+      defaultDialColors:
+        - "#addb67"
+        - "#ff5874"
+      defaultChartColors:
+        - "#addb67"
+        - "#ff5874"
+    table:
+      fgColor: "#d6deeb"
+      bgColor: "#011627"
+      cursorFgColor: "#011627"
+      cursorBgColor: "#82aaff"
+      markColor: "#ecc48d"
+      header:
+        fgColor: "#7fdbca"
+        bgColor: "#011627"
+        sorterColor: "#c792ea"
+    xray:
+      fgColor: "#d6deeb"
+      bgColor: "#011627"
+      cursorColor: "#82aaff"
+      graphicColor: "#7fdbca"
+      showIcons: true
+    yaml:
+      keyColor: "#7fdbca"
+      colonColor: "#637777"
+      valueColor: "#ecc48d"
+    logs:
+      fgColor: "#d6deeb"
+      bgColor: "#01111d"
+      indicator:
+        fgColor: "#d6deeb"
+        bgColor: "#82aaff"

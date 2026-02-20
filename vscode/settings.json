@@ -1,0 +1,39 @@
+{
+  "terminal.integrated.enableMultiLinePasteWarning": false,
+  "explorer.confirmDragAndDrop": false,
+  "terminal.integrated.scrollback": 100000,
+  "files.autoSave": "onWindowChange",
+  "[python]": {
+    "editor.formatOnType": true
+  },
+  "workbench.colorTheme": "Night Owl",
+  "terminal.integrated.autoReplies": {},
+  "terminal.integrated.defaultProfile.osx": "zsh",
+  "window.zoomLevel": 2,
+  "editor.inlineSuggest.enabled": true,
+  "workbench.iconTheme": "vscode-icons",
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": true,
+    "markdown": true,
+    "scminput": false
+  },
+  "[terraform]": {
+    "editor.defaultFormatter": "hashicorp.terraform"
+  },
+  "files.associations": {
+    "*.tf": "terraform"
+  },
+  "editor.formatOnSave": true,
+  "git.ignoreRebaseWarning": true,
+  "github.copilot.editor.enableAutoCompletions": true,
+  "terraform.codelens.referenceCount": true,
+  "git.autofetch": true,
+  "go.toolsManagement.autoUpdate": true,
+  "gitlens.ai.model": "vscode",
+  "gitlens.ai.vscode.model": "copilot:gpt-4.1",
+  "github.copilot.nextEditSuggestions.enabled": true,
+  "chat.mcp.gallery.enabled": true,
+  "claudeCode.preferredLocation": "panel",
+  "update.showReleaseNotes": false
+}

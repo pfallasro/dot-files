@@ -1,0 +1,34 @@
+aliases:
+  # Workloads
+  dp:  deployments
+  sts: statefulsets
+  ds:  daemonsets
+  cj:  cronjobs
+  jo:  jobs
+
+  # Networking
+  ing: ingresses
+  svc: services
+  np:  networkpolicies
+  ep:  endpoints
+
+  # Config & storage
+  cm:  configmaps
+  sec: v1/secrets
+  pvc: persistentvolumeclaims
+  pv:  persistentvolumes
+  sc:  storageclasses
+
+  # Cluster
+  ns:  namespaces
+  no:  nodes
+  ev:  events
+  sa:  serviceaccounts
+  hpa: horizontalpodautoscalers
+  pdb: poddisruptionbudgets
+
+  # RBAC
+  cr:  clusterroles
+  crb: clusterrolebindings
+  ro:  roles
+  rb:  rolebindings
