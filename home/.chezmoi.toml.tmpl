@@ -1,0 +1,6 @@
+[defaults]
+  mode = "symlink"
+
+[data]
+  name  = "{{ promptStringOnce . "name" "Git full name" }}"
+  email = "{{ promptStringOnce . "email" "Git email address" }}"

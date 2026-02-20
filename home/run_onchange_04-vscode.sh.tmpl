@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+# chezmoi: run when VSCode settings change
+# settings.json hash:    {{ include "vscode/settings.json" | sha256sum }}
+# keybindings.json hash: {{ include "vscode/keybindings.json" | sha256sum }}
+
+[[ "$(uname)" == "Darwin" ]] || exit 0
+
+VSCODE_DIR="$HOME/Library/Application Support/Code/User"
+SRC="{{ .chezmoi.sourceDir }}/vscode"
+
+mkdir -p "$VSCODE_DIR"
+cp "$SRC/settings.json"    "$VSCODE_DIR/settings.json"
+cp "$SRC/keybindings.json" "$VSCODE_DIR/keybindings.json"
+echo "[OK] VSCode settings copied."

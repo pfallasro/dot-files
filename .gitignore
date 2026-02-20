@@ -4,6 +4,9 @@
 *.key
 id_rsa*
 id_ed25519*
+.env
+*.env
+.aws/
 
 # Auto-generated / machine-specific
 .zsh_history
