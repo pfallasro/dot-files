@@ -54,7 +54,7 @@ cask "claude"
 cask "hammerspoon"
 cask "itsycal"
 cask "rectangle"
-cask "docker"
+cask "docker-desktop"
 cask "visual-studio-code"
 cask "wezterm"
 cask "font-meslo-lg-nerd-font"  # required for Powerlevel10k icons
