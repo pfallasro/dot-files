@@ -1,5 +1,5 @@
 -- Toggle WezTerm visibility with Cmd+W
--- Press once to bring WezTerm to the current workspace, press again to hide it.
+-- Press once to bring WezTerm to the front, press again to hide it.
 -- If WezTerm is not running, it will be launched.
 -- NOTE: This globally intercepts Cmd+W — normal close-window behavior is suppressed everywhere.
 
@@ -14,13 +14,6 @@ hs.hotkey.bind({'cmd'}, 'w', function()
   elseif frontApp:bundleID() == WEZTERM_BUNDLE then
     wezterm:hide()
   else
-    local win = wezterm:mainWindow()
-    if win then
-      local currentSpace = hs.spaces.focusedSpace()
-      hs.spaces.moveWindowToSpace(win, currentSpace)
-      win:focus()
-    else
-      hs.application.launchOrFocusByBundleID(WEZTERM_BUNDLE)
-    end
+    wezterm:activate()
   end
 end)
