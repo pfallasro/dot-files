@@ -1,6 +1,5 @@
 tap "derailed/k9s"
 tap "grafana/grafana"
-tap "homebrew/services"
 tap "idoavrah/homebrew"
 tap "metalbear-co/mirrord"
 brew "asdf"
