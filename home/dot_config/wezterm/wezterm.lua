@@ -3,8 +3,8 @@ local act = wezterm.action
 local config = wezterm.config_builder()
 
 -- ─── Font ─────────────────────────────────────────────────────────────────────
--- MesloLGS NF is required for Powerlevel10k icons
-config.font = wezterm.font('MesloLGS NF', { weight = 'Regular' })
+-- MesloLGS Nerd Font Mono is required for Powerlevel10k icons (renamed in Nerd Fonts v3)
+config.font = wezterm.font('MesloLGS Nerd Font Mono', { weight = 'Regular' })
 config.font_size = 13.0
 config.line_height = 1.2
 
