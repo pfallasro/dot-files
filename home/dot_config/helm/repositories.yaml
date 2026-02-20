@@ -1,30 +1,75 @@
 apiVersion: ""
 generated: "0001-01-01T00:00:00Z"
 repositories:
-- caFile: ""
+- name: bitnami
+  url: https://charts.bitnami.com/bitnami
+  caFile: ""
   certFile: ""
-  insecure_skip_tls_verify: false
   keyFile: ""
-  name: retool
+  insecure_skip_tls_verify: false
   pass_credentials_all: false
-  password: ""
-  url: https://charts.retool.com
   username: ""
-- caFile: ""
+  password: ""
+- name: ingress-nginx
+  url: https://kubernetes.github.io/ingress-nginx
+  caFile: ""
   certFile: ""
-  insecure_skip_tls_verify: false
   keyFile: ""
-  name: chatwoot
+  insecure_skip_tls_verify: false
   pass_credentials_all: false
-  password: ""
-  url: https://chatwoot.github.io/charts
   username: ""
-- caFile: ""
+  password: ""
+- name: cert-manager
+  url: https://charts.jetstack.io
+  caFile: ""
   certFile: ""
-  insecure_skip_tls_verify: false
   keyFile: ""
-  name: posthog
+  insecure_skip_tls_verify: false
   pass_credentials_all: false
-  password: ""
-  url: https://posthog.github.io/charts/
   username: ""
+  password: ""
+- name: prometheus-community
+  url: https://prometheus-community.github.io/helm-charts
+  caFile: ""
+  certFile: ""
+  keyFile: ""
+  insecure_skip_tls_verify: false
+  pass_credentials_all: false
+  username: ""
+  password: ""
+- name: grafana
+  url: https://grafana.github.io/helm-charts
+  caFile: ""
+  certFile: ""
+  keyFile: ""
+  insecure_skip_tls_verify: false
+  pass_credentials_all: false
+  username: ""
+  password: ""
+- name: argo
+  url: https://argoproj.github.io/argo-helm
+  caFile: ""
+  certFile: ""
+  keyFile: ""
+  insecure_skip_tls_verify: false
+  pass_credentials_all: false
+  username: ""
+  password: ""
+- name: external-secrets
+  url: https://charts.external-secrets.io
+  caFile: ""
+  certFile: ""
+  keyFile: ""
+  insecure_skip_tls_verify: false
+  pass_credentials_all: false
+  username: ""
+  password: ""
+- name: metrics-server
+  url: https://kubernetes-sigs.github.io/metrics-server/
+  caFile: ""
+  certFile: ""
+  keyFile: ""
+  insecure_skip_tls_verify: false
+  pass_credentials_all: false
+  username: ""
+  password: ""
