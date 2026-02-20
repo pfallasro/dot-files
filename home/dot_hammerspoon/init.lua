@@ -3,7 +3,7 @@
 -- If WezTerm is not running, it will be launched.
 -- NOTE: This globally intercepts Cmd+W — normal close-window behavior is suppressed everywhere.
 
-local WEZTERM_BUNDLE = 'org.wezfurlong.wezterm'
+local WEZTERM_BUNDLE = 'com.github.wez.wezterm'
 
 hs.hotkey.bind({'cmd'}, 'w', function()
   local frontApp = hs.application.frontmostApplication()
