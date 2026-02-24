@@ -74,7 +74,7 @@ config.window_padding = {
 }
 config.window_background_opacity  = 0.95
 config.macos_window_background_blur = 20
-config.window_decorations = 'RESIZE'         -- hide title bar, keep resize border
+config.window_decorations = 'INTEGRATED_BUTTONS | RESIZE'  -- traffic lights in tab bar, no title bar
 config.initial_cols = 220
 config.initial_rows = 50
 
@@ -139,6 +139,10 @@ config.keys = {
   { key = '=', mods = 'CMD',       action = act.IncreaseFontSize },
   { key = '-', mods = 'CMD',       action = act.DecreaseFontSize },
   { key = '0', mods = 'CMD',       action = act.ResetFontSize },
+
+  -- Word navigation (Option+Arrow → ESC b/f for readline/zsh compatibility)
+  { key = 'LeftArrow',  mods = 'OPT', action = act.SendString '\x1bb' },
+  { key = 'RightArrow', mods = 'OPT', action = act.SendString '\x1bf' },
 
   -- Tab management
   { key = 't', mods = 'CMD',       action = act.SpawnTab 'CurrentPaneDomain' },

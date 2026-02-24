@@ -1,5 +1,6 @@
 -- Toggle WezTerm visibility with Cmd+W
--- Press once to bring WezTerm to the front, press again to hide it.
+-- Press once to bring WezTerm to the current desktop, press again to hide it.
+-- Requires WezTerm set to "All Desktops" (right-click Dock icon → Options → All Desktops).
 -- If WezTerm is not running, it will be launched.
 -- NOTE: This globally intercepts Cmd+W — normal close-window behavior is suppressed everywhere.
 
