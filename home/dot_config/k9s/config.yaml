@@ -1,13 +1,13 @@
 k9s:
   liveViewAutoRefresh: true     # auto-refresh resource views
-  refreshRate: 2
+  refreshRate: 5
   apiServerTimeout: 30s         # increased for slow/remote clusters
   maxConnRetry: 5
   readOnly: false
   noExitOnCtrlC: true           # prevent accidental exit during incidents
   portForwardAddress: localhost
   ui:
-    enableMouse: true
+    enableMouse: false
     headless: false
     logoless: false
     crumbsless: false
@@ -26,7 +26,7 @@ k9s:
       cpu: 100m
       memory: 100Mi
   imageScans:
-    enable: true
+    enable: false
     exclusions:
       namespaces: []
       labels: {}
