@@ -49,7 +49,7 @@ Quick reference for all configured tools. Use this when you forget something.
 ### Staging (for breaking down commits)
 | Alias | Expands to | Description |
 |---|---|---|
-| `git ap` | `add --patch` | Interactively stage hunks — use before `aicommit2` |
+| `git ap` | `add --patch` | Interactively stage hunks |
 
 ### Pushing / pulling
 | Alias | Expands to | Description |
@@ -187,22 +187,6 @@ Quick reference for all configured tools. Use this when you forget something.
 | `Ctrl+P` | Search history backward |
 | `Ctrl+N` | Search history forward |
 | `Ctrl+W` | Kill word (delete word before cursor) |
-
----
-
-## aicommit2
-
-| Command | Action |
-|---|---|
-| `aicommit2` | Generate conventional commit message from staged changes |
-
-**Recommended workflow for clean commits:**
-```bash
-git ap          # stage only the hunks for commit #1
-aicommit2       # pick from 3 AI-generated conventional commit options
-git ap          # stage next logical chunk
-aicommit2       # repeat
-```
 
 ---
 

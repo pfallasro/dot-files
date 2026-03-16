@@ -16,7 +16,6 @@ dot-files/
 │   ├── dot_bash_profile     ← ~/.bash_profile
 │   ├── dot_p10k.zsh         ← ~/.p10k.zsh (Powerlevel10k theme)
 │   ├── dot_gitconfig.tmpl   ← ~/.gitconfig (name/email prompted on first apply, copied)
-│   ├── dot_aicommit2        ← ~/.aicommit2
 │   ├── dot_config/          ← ~/.config/ (gh, atuin, k9s, wezterm, helm)
 │   ├── run_once_before_*/   ← bootstrap: Xcode CLI tools, Homebrew
 │   ├── run_onchange_*/      ← re-run when content changes: brew bundle, VSCode
