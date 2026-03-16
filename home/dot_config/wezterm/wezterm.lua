@@ -115,6 +115,10 @@ config.default_prog = { '/bin/zsh', '-l' }
 
 -- ─── Keybindings ──────────────────────────────────────────────────────────────
 config.keys = {
+  -- Copy & paste (Cmd+C copies selection, falls through to app if nothing selected)
+  { key = 'c', mods = 'CMD',       action = act.CopyTo 'Clipboard' },
+  { key = 'v', mods = 'CMD',       action = act.PasteFrom 'Clipboard' },
+
   -- Search — keeps your familiar Cmd+F muscle memory
   { key = 'f', mods = 'CMD',       action = act.Search { CaseInSensitiveString = '' } },
 
