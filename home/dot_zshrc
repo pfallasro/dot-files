@@ -144,3 +144,5 @@ export PATH="/opt/homebrew/bin:/usr/local/bin:$PATH"
 
 # Prioritize GOPATH bin for locally built binaries
 export PATH="${GOPATH}/bin:$PATH"
+
+export PATH="/Users/pfallas/.codeium/windsurf/bin:$PATH"

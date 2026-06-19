@@ -7,13 +7,12 @@
 local WEZTERM_BUNDLE = 'com.github.wez.wezterm'
 
 hs.hotkey.bind({'cmd'}, 'w', function()
-  local frontApp = hs.application.frontmostApplication()
-  local wezterm  = hs.application.get(WEZTERM_BUNDLE)
+  local wezterm = hs.application.get(WEZTERM_BUNDLE)
 
   if wezterm == nil then
     hs.application.launchOrFocusByBundleID(WEZTERM_BUNDLE)
-  elseif frontApp:bundleID() == WEZTERM_BUNDLE then
-    wezterm:hide()
+  elseif wezterm:isFrontmost() then
+    hs.timer.doAfter(0.05, function() wezterm:hide() end)
   else
     wezterm:activate()
   end

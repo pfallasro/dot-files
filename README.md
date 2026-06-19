@@ -54,6 +54,8 @@ Work aliases, API keys, and anything you don't want public go in `~/.zshrc.local
 - [ ] Sign in to VSCode and sync settings (if using Settings Sync)
 - [ ] Configure SSH key for git: generate with `ssh-keygen -t ed25519 -C "you@example.com"`, add to agent with `ssh-add ~/.ssh/id_ed25519`, then add the public key (`~/.ssh/id_ed25519.pub`) to your GitHub account
 - [ ] Configure AWS auth: run `aws configure` (or set up SSO with `aws configure sso`) and verify with `aws sts get-caller-identity`
+- [ ] Grant Hammerspoon Accessibility access: **System Settings → Privacy & Security → Accessibility → enable Hammerspoon** (required for window hide/show via `Cmd+W` to work)
+- [ ] Pin WezTerm to Dock and set to All Desktops: launch WezTerm → right-click Dock icon → **Options → Keep in Dock**, then **Options → All Desktops** (required for `Cmd+W` toggle to work across spaces)
 
 ## Adding a new dotfile
 
