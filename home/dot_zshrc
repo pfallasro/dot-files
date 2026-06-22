@@ -146,3 +146,7 @@ export PATH="/opt/homebrew/bin:/usr/local/bin:$PATH"
 export PATH="${GOPATH}/bin:$PATH"
 
 export PATH="/Users/pfallas/.codeium/windsurf/bin:$PATH"
+
+# Ansible Python venv — provides boto3, hvac, pywinrm, jmespath, passlib, netaddr
+export PATH="$HOME/.venv/ansible/bin:$PATH"
+export ANSIBLE_PYTHON_INTERPRETER="$HOME/.venv/ansible/bin/python3"

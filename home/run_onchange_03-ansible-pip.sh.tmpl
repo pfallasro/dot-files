@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+# run_onchange_03-ansible-pip.sh — install Python deps for Ansible
+# chezmoi re-runs this whenever ansible-requirements.txt changes
+# {{ include "ansible-requirements.txt" | sha256sum }}
+
+set -euo pipefail
+
+VENV="$HOME/.venv/ansible"
+
+echo "[INFO] Setting up Ansible Python venv at $VENV"
+python3 -m venv "$VENV"
+"$VENV/bin/pip" install -q --upgrade pip
+"$VENV/bin/pip" install -r "{{ .chezmoi.sourceDir }}/ansible-requirements.txt"
+echo "[INFO] Ansible Python deps installed."

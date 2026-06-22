@@ -1,0 +1,7 @@
+boto3
+botocore
+hvac
+pywinrm
+jmespath
+passlib
+netaddr
